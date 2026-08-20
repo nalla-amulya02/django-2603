@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} recipe Page {% endblock %}
+{% block extra_css%} 
+<link rel="stylesheet" href="{% static "base.css" %}">
+{% endblock %}
+{% block nav%} {% include "recipie/includes/nav.html" with text=num %}{% endblock %}
+{% block content %}<h1>Welcome to the recipe Page</h1>
+<p>This is the recipe page content.</p>
+{% endblock  %} 
