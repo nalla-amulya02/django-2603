@@ -1,0 +1,15 @@
+ORM - OBJECT RELATIONAL MAPPING
+
+
+books
+------------------------------------------------
+id | title                    | rating
+------------------------------------------------
+1  | Harry Potter             | 5
+2  | Lord of the Rings        | 4
+
+SELECT * FROM BOOKS;
+
+objects.all()
+
+model -  python class represtn the data
