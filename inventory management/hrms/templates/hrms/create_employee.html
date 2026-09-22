@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Create Employee{% endblock %}
+
+{% block content %}
+<div class="card" style="max-width: 500px; margin: 40px auto;">
+    <h2>Create Employee</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="text" name="department" placeholder="Department" value="General">
+        <button type="submit">Create Employee</button>
+    </form>
+</div>
+{% endblock %}
